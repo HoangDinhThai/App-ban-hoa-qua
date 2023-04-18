@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="70dp">
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/home"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:id="@+id/tv_nameacc"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="20dp"
+        android:textColor="#F44336"
+        android:text="Số lượng"
+        android:id="@+id/tv_soluongtaikhoan"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="20dp"
+        android:textColor="#F44336"
+        android:text="Số lượng"
+        android:id="@+id/tv_soluongdangban"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="20dp"
+        android:textColor="#F44336"
+        android:text="Số lượng"
+        android:id="@+id/tv_soluong"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="20dp"
+        android:textColor="#F44336"
+        android:text="Số lượng"
+        android:id="@+id/tv_thunhap"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:textColor="#C8180B"
+        android:text="LOG OUT"
+        android:textSize="25dp"
+        android:background="@drawable/botron_btn_acc"
+        android:id="@+id/btn_logout"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:text="Version 5.0.0"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:text="A Friut Copyright"/>
+</LinearLayout>
