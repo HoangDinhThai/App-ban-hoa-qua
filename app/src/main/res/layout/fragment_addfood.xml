@@ -3,52 +3,63 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
     <EditText
         android:layout_width="300dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="70dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
         android:hint="Nhập vào loại hoa quả"
+        android:fontFamily="serif-monospace"
+        android:textSize="20dp"
+        android:textStyle="bold"
         android:layout_gravity="center"
         android:gravity="center"
         android:id="@+id/edt_namefood"
         android:background="@drawable/botron_edt"/>
     <Spinner
         android:layout_width="300dp"
-        android:layout_height="30dp"
+        android:layout_height="40dp"
         android:layout_gravity="center"
         android:gravity="center"
-        android:layout_marginTop="17dp"
-        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/botron_edt"
         android:id="@+id/spn_food"/>
     <EditText
         android:layout_width="300dp"
-        android:layout_height="30dp"
+        android:layout_height="40dp"
         android:layout_gravity="center"
         android:gravity="center"
-        android:layout_margin="10dp"
+        android:fontFamily="serif-monospace"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
         android:hint="Nhập giá"
         android:background="@drawable/botron_edt"
         android:id="@+id/edt_price"/>
     <EditText
         android:layout_width="300dp"
-        android:layout_height="30dp"
+        android:layout_height="40dp"
         android:layout_gravity="center"
         android:gravity="center"
+        android:fontFamily="serif-monospace"
+        android:textSize="20dp"
+        android:textStyle="bold"
         android:hint="Nhập reveiw"
         android:background="@drawable/botron_edt"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:id="@+id/edt_describe"/>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
         <ImageView
             android:layout_width="45dp"
             android:layout_height="45dp"
-            android:layout_margin="10dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
             android:scaleType="fitXY"
             android:src="@drawable/ic_baseline_camera_alt_24"
             android:id="@+id/imv_camera"/>
@@ -60,14 +71,18 @@
             android:src="@drawable/ic_baseline_folder_24"
             android:id="@+id/imv_folder"/>
     </LinearLayout>
+
     <Button
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:onClick="AddFood"
-        android:layout_marginTop="45dp"
-        android:layout_gravity="center"
-        android:text="Thêm mặt hàng"
-        android:textColor="#fff"
         android:id="@+id/btn_addfood"
-        android:background="@drawable/botron_edt"/>
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/botron_btn_acc"
+        android:onClick="AddFood"
+        android:text="Thêm mặt hàng"
+        android:fontFamily="serif-monospace"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 </LinearLayout>

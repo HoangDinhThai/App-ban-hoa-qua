@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="170dp"
         android:orientation="vertical"
-        android:layout_marginBottom="70dp">
+        android:layout_marginBottom="10dp">
         <ImageView
             android:layout_width="130dp"
             android:layout_height="120dp"
@@ -27,54 +27,68 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+       android:layout_margin="20dp"
+        android:paddingLeft="10dp"
         android:textSize="20dp"
-        android:textColor="#F44336"
+        android:textColor="#006666"
         android:text="Số lượng"
+        android:fontFamily="sans-serif-black"
         android:id="@+id/tv_soluongtaikhoan"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
+        android:paddingLeft="10dp"
         android:textSize="20dp"
-        android:textColor="#F44336"
+        android:textColor="#006666"
         android:text="Số lượng"
+        android:fontFamily="sans-serif-black"
         android:id="@+id/tv_soluongdangban"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
+        android:paddingLeft="10dp"
         android:textSize="20dp"
-        android:textColor="#F44336"
+        android:textColor="#006666"
         android:text="Số lượng"
+        android:fontFamily="sans-serif-black"
         android:id="@+id/tv_soluong"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
+        android:paddingLeft="10dp"
         android:textSize="20dp"
-        android:textColor="#F44336"
-        android:text="Số lượng"
+        android:textColor="#006666"
+        android:text="Tổng thu nhập"
+        android:fontFamily="sans-serif-black"
         android:id="@+id/tv_thunhap"/>
+
     <Button
+        android:id="@+id/btn_logout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="65dp"
-        android:textColor="#C8180B"
-        android:text="LOG OUT"
-        android:textSize="25dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/botron_btn_acc"
-        android:id="@+id/btn_logout"/>
+        android:text="LOG OUT"
+        android:textColor="#C8180B"
+        android:textSize="25dp" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="15dp"
         android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-black"
         android:text="Version 5.0.0"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="15dp"
         android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-black"
         android:text="A Friut Copyright"/>
 </LinearLayout>
