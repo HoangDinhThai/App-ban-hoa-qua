@@ -3,7 +3,6 @@ package com.example.app_ban_hoa_qua.DAO;
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
-import androidx.room.Query;
 import androidx.room.Update;
 
 import com.example.app_ban_hoa_qua.Entity.Account;
@@ -21,7 +20,7 @@ public interface DaoAccount  {
 
 
     //@Query("select * from account_db")
-    List<android.accounts.Account> ACCOUNT_LIST();
+    List<Account> ACCOUNT_LIST();
 
     @Insert()
     void insert_account(Account account);
