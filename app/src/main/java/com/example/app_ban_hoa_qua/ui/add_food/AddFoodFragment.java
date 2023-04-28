@@ -71,9 +71,9 @@ public class AddFoodFragment extends Fragment {
         mImageView_imagesfood = root.findViewById(R.id.imv_add_food);
         mSpinner_food = root.findViewById(R.id.spn_food);
         list = new ArrayList<>();
-        list.add("Đồ ăn vặt");
-        list.add("Thức ăn chính");
-        list.add("Giải khát");
+        list.add("Hoa quả tươi");
+        list.add("Hoa quả khô");
+        list.add("Hoa quả nhập khẩu");
         ArrayAdapter adapter = new ArrayAdapter(getContext(), R.layout.support_simple_spinner_dropdown_item, list);
         mSpinner_food.setAdapter(adapter);
 
