@@ -68,7 +68,6 @@ public class AddFoodFragment extends Fragment {
         mButton_add = root.findViewById(R.id.btn_addfood);
         mimageButton_camera = root.findViewById(R.id.imv_camera);
         mimageButton_folder = root.findViewById(R.id.imv_folder);
-        mImageView_imagesfood = root.findViewById(R.id.imv_add_food);
         mSpinner_food = root.findViewById(R.id.spn_food);
         list = new ArrayList<>();
         list.add("Hoa quả tươi");
