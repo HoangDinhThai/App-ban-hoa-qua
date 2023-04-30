@@ -53,8 +53,8 @@ public class HomeFragment extends Fragment implements BottomSheet.BottomSheetLis
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
-        ViewGroup container, Bundle savedInstanceState) { homeViewModel
-        = ViewModelProviders.of(this).get(HomeViewModel.class);
+                             ViewGroup container, Bundle savedInstanceState) { homeViewModel
+            = ViewModelProviders.of(this).get(HomeViewModel.class);
         View root = inflater.inflate(R.layout.fragment_home, container, false);
         mGridViewIntro = root.findViewById(R.id.gv_intro);
         mRecyclerViewFood = root.findViewById(R.id.rcl_food);
