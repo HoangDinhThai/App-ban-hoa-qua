@@ -7,12 +7,6 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProviders;
-
 import android.provider.MediaStore;
 import android.text.InputType;
 import android.util.Log;
@@ -28,7 +22,13 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProviders;
+
 import com.example.app_ban_hoa_qua.Activity.Home_Activity2;
+import com.example.app_ban_hoa_qua.Convert.DataConvert;
 import com.example.app_ban_hoa_qua.DAO.AppDatabase;
 import com.example.app_ban_hoa_qua.Entity.Foody;
 import com.example.app_ban_hoa_qua.R;
@@ -73,7 +73,7 @@ public class AddFoodFragment extends Fragment {
         list.add("Hoa quả tươi");
         list.add("Hoa quả khô");
         list.add("Hoa quả nhập khẩu");
-        ArrayAdapter adapter = new ArrayAdapter(getContext(), R.layout.support_simple_spinner_dropdown_item, list);
+        ArrayAdapter adapter = new ArrayAdapter(getContext(), androidx.constraintlayout.widget.R.layout.support_simple_spinner_dropdown_item, list);
         mSpinner_food.setAdapter(adapter);
 
         mEditText_price.setInputType(InputType.TYPE_CLASS_NUMBER |
@@ -138,7 +138,6 @@ public class AddFoodFragment extends Fragment {
                 }
             }
         });
-
 
         return root;
     }

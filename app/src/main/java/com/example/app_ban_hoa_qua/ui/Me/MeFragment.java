@@ -1,6 +1,5 @@
 package com.example.app_ban_hoa_qua.ui.Me;
 
-import android.accounts.Account;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,13 +15,13 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.example.app_ban_hoa_qua.Activity.MainActivity;
-import com.example.app_ban_hoa_qua.R;
-import com.example.app_ban_hoa_qua.Activity.ListAccActivity;
 import com.example.app_ban_hoa_qua.DAO.AppDatabase;
 import com.example.app_ban_hoa_qua.Database.AccountDatabase;
 import com.example.app_ban_hoa_qua.Database.BuyDatabase;
 import com.example.app_ban_hoa_qua.Entity.Buy;
 import com.example.app_ban_hoa_qua.Entity.Foody;
+import com.example.app_ban_hoa_qua.R;
+import com.example.app_ban_hoa_qua.Entity.Account;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -4,9 +4,9 @@ import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Update;
+import androidx.room.Query;
 
 import com.example.app_ban_hoa_qua.Entity.Account;
-
 import java.util.List;
 
 @Dao
@@ -19,8 +19,8 @@ public interface DaoAccount  {
 //    List <String> STRING_LISTPASS();
 
 
-    //@Query("select * from account_db")
-    List<Account> ACCOUNT_LIST();
+    @Query("select * from account_db")
+    List <Account> ACCOUNT_LIST();
 
     @Insert()
     void insert_account(Account account);
@@ -29,6 +29,5 @@ public interface DaoAccount  {
     void update_account (Account account);
 
     @Delete
-    void delete_account( Account account);
-
+    void delete_account(Account account);
 }
